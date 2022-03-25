@@ -1,8 +1,7 @@
 fun main() {
-    val likes = 62
-    val correctness = if (likes % 2 == 0) {
-        "Людям"
-    } else "Человеку"
+    val likes = 1
+    val correctness = if (likes % 10 !== 1 || likes % 100 == 11) "Людям" else "Человеку"
 
-    print("Понравилось $likes $correctness")
+    println("Понравилось $likes $correctness")
+
 }
